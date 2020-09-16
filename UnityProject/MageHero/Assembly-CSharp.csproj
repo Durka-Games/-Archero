@@ -606,20 +606,20 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Notifications.iOS">
+      <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Notifications.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Notifications.Android">
+      <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Notifications.Android.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Notifications.iOS">
-      <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Notifications.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Notifications.Android">
-      <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Notifications.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
