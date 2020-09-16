@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Notification\Test.cs" />
     <Compile Include="Assets\Scripts\Player\Move\CharacterMove.cs" />
     <Compile Include="Assets\Scripts\Player\Move\MobileController.cs" />
     <Reference Include="UnityEngine">
@@ -613,6 +614,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Notifications.iOS">
+      <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Notifications.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Notifications.Android">
+      <HintPath>D:/Programming/Archero/UnityProject/MageHero/Library/ScriptAssemblies/Unity.Notifications.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
