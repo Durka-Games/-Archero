@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CharacterMove
     - MobileController
     - Test
+    - WandAnimation
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -49,25 +50,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11166}
+    - Class: 114
       Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11330}
+      Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11760}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 12160}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12410}
     - Class: 114
-      Script: {instanceID: 12412}
+      Script: {instanceID: 12646}
     - Class: 114
-      Script: {instanceID: 12648}
+      Script: {instanceID: 13002}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 13486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -537,7 +540,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a80034fc4132e309f900cc338ffeb40b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WandAnimation
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Programming/Archero/UnityProject/Builds/0.0.0.2/tetsApk.apk
+  playerPath: D:/Programming/Archero/UnityProject/Builds/0.0.0.3/tetsApk.apk

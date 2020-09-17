@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Joystic
+  - Part2
+  - Part3
   layers:
   - Default
   - TransparentFX

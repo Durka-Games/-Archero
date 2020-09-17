@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Notification\Test.cs" />
+    <Compile Include="Assets\Scripts\Player\Animation\WandAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\Move\CharacterMove.cs" />
     <Compile Include="Assets\Scripts\Player\Move\MobileController.cs" />
     <Reference Include="UnityEngine">
