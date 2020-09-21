@@ -1,19 +1,2 @@
-Base path: 'C:/Program Files/Unity/2019.4.9f1/Editor/Data', plugins path 'C:/Program Files/Unity/2019.4.9f1/Editor/Data/PlaybackEngines'
+Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.9f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.9f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-Cmd: compileSnippet
-  api=4 type=1 insize=2295 outsize=446 kw= pd=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING ok=1
-Cmd: compileComputeKernel
-  error: 2 plat 4 at MultiScaleVOUpsample.compute(37): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
-  api=4 insize=18353 outsize=0 ok=0
-Cmd: compileComputeKernel
-  error: 2 plat 9 at (2): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
-  error: 2 plat 9 at (3): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/Colors.hlsl'
-  error: 2 plat 9 at (4): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/ACES.hlsl'
-  api=9 insize=5017 outsize=0 ok=0
-Cmd: compileComputeKernel
-  error: 2 plat 4 at MultiScaleVODownsample2.compute(28): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'
-  api=4 insize=2098 outsize=0 ok=0
-Cmd: compileSnippet
-  error: 2 plat 4 at (21): failed to open source file: 'Packages/com.unity.postprocessing/PostProcessing/Shaders/StdLib.hlsl'\nCompiling Fragment program with FINALPASS
-Platform defines: UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING
-  api=4 type=1 insize=11832 outsize=0 kw=FINALPASS pd=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_CUBEMAP_ARRAY UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING ok=0
