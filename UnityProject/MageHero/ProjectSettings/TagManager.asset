@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Joystic
-  - Part2
-  - Part3
+  - EnemyManager
   layers:
   - Default
   - TransparentFX
