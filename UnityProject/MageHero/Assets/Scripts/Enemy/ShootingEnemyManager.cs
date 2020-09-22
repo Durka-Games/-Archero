@@ -98,7 +98,7 @@ public class ShootingEnemyManager : MonoBehaviour
                     Vector3 direction = player.position - transform.position;
 
                     if (Physics.Raycast(transform.position, direction, out hit)) isRayCast[CellsX, CellsY] = hit.transform.Equals(player);
-
+                    Debug.DrawRay(transform.position, direction.normalized*hit.distance, isRayCast[CellsX, CellsY]?Color.green : Color.red);
                 }
                 else isRayCast[CellsX, CellsY] = false;
 
