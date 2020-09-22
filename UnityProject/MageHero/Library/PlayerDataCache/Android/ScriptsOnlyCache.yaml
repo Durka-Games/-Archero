@@ -3,8 +3,19 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CharacterMove
     - MobileController
-    - Test
+    - ShootingEnemyController
+    - ShootingEnemyManager
     - WandAnimation
+    Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
+    - UnityEditor.Tilemaps.GridPaintPaletteWindow
+    - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.PaintableSceneViewGrid
+    - UnityEditor.Tilemaps.SceneViewGridManager
+    - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -14,13 +25,12 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Levels/Level_1_Mine/Level_1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -39,8 +49,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -50,30 +58,36 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11166}
+      Script: {instanceID: 644}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 11280}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11282}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11760}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 12158}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12582}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 13002}
+      Script: {instanceID: 13204}
     - Class: 114
-      Script: {instanceID: 13486}
+      Script: {instanceID: 14054}
+    - Class: 114
+      Script: {instanceID: 38300}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 122
+      Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -88,6 +102,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -320,6 +340,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: a80034fc4132e309f900cc338ffeb40b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WandAnimation
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -542,11 +568,17 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: a80034fc4132e309f900cc338ffeb40b
+      Hash: a39c778d30d8c6029829b4e5b8d2bdf9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WandAnimation
+    className: ShootingEnemyManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4fccb20047a4c91fb5373914d7e66ad8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootingEnemyController
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Programming/Archero/UnityProject/Builds/0.0.0.3/tetsApk.apk
+  - Assets/Scenes/Levels/Level_1_Mine/Level_1.unity
+  playerPath: D:/Programming/Archero/UnityProject/Builds/0.0.0.4 raycast test/tetsApk.apk
