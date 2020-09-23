@@ -1,25 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
+using System.IO;
+using System;
+using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class ShootingEnemyController : MonoBehaviour
 {
 
-    Behaviour halo; ////////////////////////////////////////////
-
-
-
+    [SerializeField] private NavMeshAgent AI;
     [SerializeField] private GameObject EnemyManager;
     private ShootingEnemyManager manager;
+
+    private int XStartCell;
+    private int YStartCell;
+    private float delX;
+    private float delY;
+    private int widht;
+    private int height;
+
+    private Vector3 moveVector;
 
     // Start is called before the first frame update
     void Start()
     {
-                
-        halo = (Behaviour)GetComponent("Halo");/////////////////
-        halo.enabled = false;///////////////////////////////////
 
+        AI = GetComponent<NavMeshAgent>();
         manager = EnemyManager.GetComponent<ShootingEnemyManager>();
-        manager.addEnemy(this);
+
+        StartCoroutine(start());
+
+    }
+
+    IEnumerator start()
+    {
+
+        yield return new WaitUntil(() => manager.GetIsReady());
+        manager.addEnemy(this, out XStartCell, out YStartCell, out delX, out delY, out widht, out height);
 
     }
 
@@ -30,23 +48,65 @@ public class ShootingEnemyController : MonoBehaviour
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, direction, out hit))
-        {
-
-            halo.enabled = !hit.transform.Equals(target);
-
-            return hit.transform.Equals(target);
-
-        }
-
+            if (hit.transform.Equals(target))
+            {
+                AI.isStopped = true;
+                return true;
+            }
         return false;
 
     }
 
-    public void Move(bool[,] RaycastMap)
+    public void Move(bool[,] RaycastMap, Tilemap MovableMap)
     {
+
+        Vector3 position = MovableMap.WorldToCell(transform.position);
+
+        float minCost = widht * widht + height * height;
+        int minX = 0;
+        int minY = 0;
+
+        for(int x = 0; x < widht; x++)
+        {
+
+            for (int y = 0; y < height; y++)
+            {
+
+                if(RaycastMap[x, y])
+                {
+
+                    if(Vector3.Distance(position, new Vector3(x + XStartCell, y + YStartCell, 0)) < minCost)
+                    {
+
+                        minCost = Vector3.Distance(position, new Vector3(x + XStartCell, y + YStartCell, 0));
+                        minX = x;
+                        minY = y;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+        Vector3Int moveVectorCells = new Vector3Int(minX + XStartCell, minY + YStartCell, 0);
+
+        if (!moveVector.Equals(moveVectorCells))
+        {
+
+            moveVector = MovableMap.CellToWorld(moveVectorCells);
+
+            moveVector = new Vector3(moveVector.x + delX / 2, moveVector.y, moveVector.z + delY / 2);
+
+            AI.ResetPath();
+            AI.SetDestination(moveVector);
+            AI.isStopped = false;
+
+        }
+
         
-
-
     }
 
 }

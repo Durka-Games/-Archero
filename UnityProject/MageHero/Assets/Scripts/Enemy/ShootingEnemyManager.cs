@@ -28,6 +28,9 @@ public class ShootingEnemyManager : MonoBehaviour
 
     [SerializeField] private Transform player;
 
+    private bool isReady = false;
+
+    public bool GetIsReady() { return isReady; }
 
     List<ShootingEnemyController> enemy = new List<ShootingEnemyController>();
 
@@ -48,6 +51,8 @@ public class ShootingEnemyManager : MonoBehaviour
         XStartPosWorld = MovableMap.CellToWorld(new Vector3Int(XStartPos, YStartPos, 0)).x;
         YStartPosWorld = MovableMap.CellToWorld(new Vector3Int(XStartPos, YStartPos, 0)).z;
 
+        isReady = true;
+
     }
 
     private void Update()
@@ -57,8 +62,14 @@ public class ShootingEnemyManager : MonoBehaviour
 
         for (int i = 0; i < enemy.Count; i++) if (!enemy[i].raycast(player)) needRaycastMap.Add(enemy[i]);
 
-        if (needRaycastMap.Count != 0) FillRayCastMap();
+        if (needRaycastMap.Count != 0)
+        {
+         
+            FillRayCastMap();
 
+            for (int i = 0; i < needRaycastMap.Count; i++) needRaycastMap[i].Move(isRayCast, MovableMap);
+
+        }
 
 
 
@@ -114,11 +125,18 @@ public class ShootingEnemyManager : MonoBehaviour
     }
 
 
-    public void addEnemy(ShootingEnemyController _enemy)
+    public void addEnemy(ShootingEnemyController _enemy, out int XstartCell, out int YStartCell, out float delX, out float delY, out int widht, out int height)
     {
 
         if (!enemy.Contains(_enemy))
             enemy.Add(_enemy);
+
+        XstartCell = XStartPos;
+        YStartCell = YStartPos;
+        delX = delWidth;
+        delY = delHeight;
+        widht = this.width;
+        height = this.height;
 
     }
 
