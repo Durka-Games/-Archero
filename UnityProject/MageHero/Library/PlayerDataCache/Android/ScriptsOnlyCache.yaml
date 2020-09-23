@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - ShootingEnemyController
     - ShootingEnemyManager
     - WandAnimation
+    NavMeshComponents.dll:
+    - UnityEngine.AI.NavMeshSurface
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -60,27 +62,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 644}
     - Class: 114
-      Script: {instanceID: 11280}
+      Script: {instanceID: 11220}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11222}
     - Class: 114
-      Script: {instanceID: 11450}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 11902}
+      Script: {instanceID: 11852}
     - Class: 114
-      Script: {instanceID: 12264}
+      Script: {instanceID: 11956}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12224}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12542}
     - Class: 114
-      Script: {instanceID: 13204}
+      Script: {instanceID: 12724}
     - Class: 114
-      Script: {instanceID: 14054}
+      Script: {instanceID: 12752}
     - Class: 114
-      Script: {instanceID: 38300}
+      Script: {instanceID: 12792}
+    - Class: 114
+      Script: {instanceID: 13174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -93,6 +97,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 213
@@ -102,6 +108,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -140,6 +148,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 2b19be13f00df62e6d4d4f5539bcad51
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: c8c672fee8a258266e51b55a210b8083
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshLink
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -316,6 +336,18 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 4fccb20047a4c91fb5373914d7e66ad8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootingEnemyController
+  - hash:
+      serializedVersion: 2
+      Hash: 7299a528424874bcf6b5736b5305ac37
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifierVolume
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -442,6 +474,18 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: a39c778d30d8c6029829b4e5b8d2bdf9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShootingEnemyManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8d4458b476a9a4dd8df843a849fcfffa
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshSurface
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -566,19 +610,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: a39c778d30d8c6029829b4e5b8d2bdf9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShootingEnemyManager
-  - hash:
-      serializedVersion: 2
-      Hash: 4fccb20047a4c91fb5373914d7e66ad8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShootingEnemyController
   platform: 13
   scenePathNames:
   - Assets/Scenes/Levels/Level_1_Mine/Level_1.unity
-  playerPath: D:/Programming/Archero/UnityProject/Builds/0.0.0.4 raycast test/tetsApk.apk
+  playerPath: C:/Users/dns/Downloads/-Archero/UnityProject/Builds/0.0.0.4.5/test.apk
