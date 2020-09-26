@@ -6,21 +6,10 @@ using System;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
-public class ShootingEnemyController : MonoBehaviour
+public class ShootingEnemyController : EnemyController
 {
 
-    [SerializeField] private NavMeshAgent AI;
-    [SerializeField] private GameObject EnemyManager;
-    private ShootingEnemyManager manager;
-
-    private int XStartCell;
-    private int YStartCell;
-    private float delX;
-    private float delY;
-    private int widht;
-    private int height;
-
-    private Vector3 moveVector;
+    protected ShootingEnemyManager manager;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +30,7 @@ public class ShootingEnemyController : MonoBehaviour
 
     }
 
-    public bool raycast(Transform target)
+    public override bool raycast(Transform target)
     {
 
         Vector3 direction = target.position - transform.position;
@@ -57,7 +46,7 @@ public class ShootingEnemyController : MonoBehaviour
 
     }
 
-    public void Move(bool[,] RaycastMap, Tilemap MovableMap)
+    public override void Move(bool[,] RaycastMap, Tilemap MovableMap)
     {
 
         Vector3 position = MovableMap.WorldToCell(transform.position);

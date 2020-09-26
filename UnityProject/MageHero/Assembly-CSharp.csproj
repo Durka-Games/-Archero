@@ -63,8 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\ShootingEnemyController.cs" />
     <Compile Include="Assets\Scripts\Enemy\ShootingEnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ShootingFlyEnemyController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ShootingFlyEnemyManager.cs" />
     <Compile Include="Assets\Scripts\Notification\Test.cs" />
     <Compile Include="Assets\Scripts\Player\Move\CharacterMove.cs" />
     <Compile Include="Assets\Scripts\Player\Move\MobileController.cs" />
