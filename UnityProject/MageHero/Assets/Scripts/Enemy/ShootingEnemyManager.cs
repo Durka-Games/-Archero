@@ -81,7 +81,7 @@ public class ShootingEnemyManager : MonoBehaviour
                 if (isRayCast[i, l]) TrueTest++;
                 else FalseTest++;
 
-        test.text = string.Format("Raycasts: true - {0} || false - {1}\nFrameTime - {2} || FPS - {3}", TrueTest, FalseTest, Time.deltaTime, (int)(1 / Time.deltaTime));
+        test.text = string.Format("Raycasts: true - {0} || false - {1}\nFrameTime - {2} || FPS - {3}\n{4}", TrueTest, FalseTest, Time.deltaTime, (int)(1 / Time.deltaTime), needRaycastMap.Count != 0);
 
     }
 

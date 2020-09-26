@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - MobileController
     - ShootingEnemyController
     - ShootingEnemyManager
-    - WandAnimation
     NavMeshComponents.dll:
     - UnityEngine.AI.NavMeshSurface
     Unity.2D.Tilemap.Editor.dll:
@@ -20,6 +19,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -53,7 +58,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -62,32 +73,30 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 644}
     - Class: 114
-      Script: {instanceID: 11220}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11222}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11852}
+      Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 11956}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12224}
+      Script: {instanceID: 12632}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12812}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 12752}
+      Script: {instanceID: 12878}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 13260}
     - Class: 114
-      Script: {instanceID: 13174}
+      Script: {instanceID: 13956}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 122
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -336,7 +345,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 4fccb20047a4c91fb5373914d7e66ad8
+      Hash: 4f9981bc2dc57bae39df08bcca3031eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShootingEnemyController
@@ -370,12 +379,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
-  - hash:
-      serializedVersion: 2
-      Hash: a80034fc4132e309f900cc338ffeb40b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WandAnimation
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -613,4 +616,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Levels/Level_1_Mine/Level_1.unity
-  playerPath: C:/Users/dns/Downloads/-Archero/UnityProject/Builds/0.0.0.4.5/test.apk
+  playerPath: D:/Programming/Archero/UnityProject/Builds/0.0.0.5/testApk.apk
